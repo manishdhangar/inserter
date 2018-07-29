@@ -65,11 +65,11 @@ Chunk size :10000 jsonsize:8gb 100000000lines took 36m
 
 running faster solution
 ```
-./gradlew -PmainClass=FasterSolution -Pargs=sample.json execute 
+./gradlew -PmainClass=Fast -Pargs=sample.json execute 
 ```
 latest test with 8gb file took 33m. 
 ```
-./gradlew -PmainClass=EPTFAssignment.solver.FasterSolution -Pargs=sample.json execute -Dorg.gradle.jvmargs="-Xmx4g -XX:+UseG1GC -XX:+UseStringDeduplication"
+./gradlew -PmainClass=eptf.solver.Fast -Pargs=sample.json execute -Dorg.gradle.jvmargs="-Xmx4g -XX:+UseG1GC -XX:+UseStringDeduplication"
 ```
 generating sample data
 ```

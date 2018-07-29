@@ -15,7 +15,7 @@ public class CreateTestJsonTest {
 
 	@Test
 	public void jsonGeneratorTest() throws Exception {
-		jg.generateJson(null);
+		jg.createJson(null);
 	}
 
 }

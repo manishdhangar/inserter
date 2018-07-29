@@ -33,13 +33,13 @@ public class CreateTestJson {
 			gsj.objectCount = 1000L;
 
 		long startTime = System.nanoTime();
-		gsj.generateJson(gsj.objectCount);
+		gsj.createJson(gsj.objectCount);
 		long elapsedTime = System.nanoTime() - startTime;
 		System.out.println("Total execution time to create " + gsj.objectCount + " objects in Java in millis: "
 				+ elapsedTime / 1000000);
 	}
 
-	public void generateJson(Long i) throws IOException, JsonProcessingException {
+	public void createJson(Long i) throws IOException, JsonProcessingException {
 		Random r = new Random();
 		String host = "12345";
 		String type = "APPLICATION_LOG";
